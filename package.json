@@ -1,0 +1,24 @@
+{
+  "name": "net-listen",
+  "version": "0.1.0",
+  "description": "Listen helper for net module helping with socket listening",
+  "main": "index.js",
+  "homepage": "https://github.com/dkMorlok/node-net-listen",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dkMorlok/node-net-listen.git"
+  },
+  "keywords": [
+    "net",
+    "http",
+    "listen",
+    "helper",
+    "unix",
+    "socket"
+  ],
+  "author": {
+    "name": "Dusan Kmet",
+    "email": "morlokdk@gmail.com"
+  },
+  "license": "MIT"
+}
