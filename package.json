@@ -20,5 +20,11 @@
     "name": "Dusan Kmet",
     "email": "morlokdk@gmail.com"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "jasmine": "^2.4.1"
+  },
+  "scripts": {
+    "test": "jasmine"
+  }
 }
