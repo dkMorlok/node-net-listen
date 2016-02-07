@@ -39,7 +39,7 @@ describe('listen', function () {
 		expect(netListen.listen).toHaveBeenCalledWith(this.server, {port: config, host: callback}, this.callback);
 	});
 
-	it('requires callback to be specified', function () {
+	it('requires callback to be specified (why?)', function () {
 		expect(function () {
 			netListen.listen(this.server, {});
 		}).toThrowError(/callback is required/i);
