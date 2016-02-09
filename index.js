@@ -27,7 +27,7 @@ module.exports = {
 		server.once('listening', function() {
 			if (config.path) {
 				// change socket permissions
-				fs.chmod(config.path, config.pathMode || 0o777);
+				fs.chmod(config.path, config.pathMode || 0777);
 			}
 			callback(null);
 		});
