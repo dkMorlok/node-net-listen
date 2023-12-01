@@ -1,5 +1,5 @@
-var fs = require('fs');
-var net = require('net');
+var fs = require('node:fs');
+var net = require('node:net');
 
 module.exports = {
 
@@ -27,7 +27,9 @@ module.exports = {
 		server.once('listening', function() {
 			if (config.path) {
 				// change socket permissions
-				fs.chmod(config.path, config.pathMode || 0777);
+				fs.chmod(config.path, config.pathMode || 0777,  () => {
+					console.log("\nFile " + config.path + " has now been edited.");
+				});
 			}
 			callback(null);
 		});
